@@ -29,7 +29,7 @@ const Header = () => {
                         
                         <div className="absolute hidden group-hover:block left-[-800px]">
                             <div className='flex   space-x-4 left-[-500px] mt-10 bg-white text-black ' >
-                            <a href="/resource1" className="hover:text-gray-400">Resource 1</a>
+                            <a href="./pages/" className="hover:text-gray-400">Resource 1</a>
                             <a href="/resource2" className="hover:text-gray-400">Resource 2</a>
                             <a href="/resource3" className="hover:text-gray-400">Resource 3</a>
                             <a href="/resource3" className="hover:text-gray-400">Resource 3</a>

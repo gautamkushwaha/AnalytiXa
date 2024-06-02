@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header'
 import Home from './pages/Home'
+import AI_MLandDataAnalytics from './pages/AI_MLandDataAnalytics'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,8 @@ function App() {
     <>
      <Header/>
      <Home/>
+     <AI_MLandDataAnalytics/>
+     
     </>
   )
 }
