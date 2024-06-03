@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage'
 import AI_MLandDataAnalytics from './pages/AI_MLandDataAnalytics'
 import Blog from './pages/Blog';
 import Footer from './components/Footer';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
      <Route path="/" element={<HomePage/>} />
      <Route path="/ai-ml-and-data-analytics" element={<AI_MLandDataAnalytics/>} />
      <Route path="/blog" element={ <Blog/>} />
+     <Route path="/aboutus" element={<AboutUs/>}/>
      </Routes>
      <Footer/>
      </Router>
