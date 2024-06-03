@@ -27,7 +27,7 @@ function AI_MLandDataAnalytics() {
             <div className='flex max-w-70% '>
                <div className='flex-row text-left w-1/2'>
                
-                <p className=" text-5xl font-bold  mx-auto">
+                <p className=" text-5xl font-bold  mx-auto mr-10">
                  working process helps you to get the best from our team skill.
                </p>
                </div>
@@ -58,28 +58,31 @@ function AI_MLandDataAnalytics() {
       <section className="py-16">
   <div className="max-w-7xl mx-auto px-4">
     <h2 className="text-3xl font-bold text-left mb-10">Our Services</h2>
-    <div className="flex flex-col ">
+    <div className="flex flex-col gap-8">
       {[
-        { title: 'Big Data Consulting', description: 'This is the process of examining data sets to draw conclusions about the information they contain. It involves techniques ranging from descriptive statistics to advanced data mining and predictive analytics, helping organizations make informed decisions and solve problems.', link: '/big-data', imgSrc: 'image1.png' },
-        { title: 'Data Analytics', description: 'We analyze data to provide actionable insights.', link: '/data-analytics', imgSrc: 'image2.png' },
-        { title: 'Machine Learning', description: 'We build machine learning models.', link: '/machine-learning', imgSrc: 'image3.png' },
-        { title: 'Data Security', description: 'We ensure your data is protected.', link: '/data-security', imgSrc: 'image4.png' },
-        { title: 'Artificial Intelligence', description: 'We develop AI solutions.', link: '/artificial-intelligence', imgSrc: 'image5.png' },
+        { title: 'Big Data Consulting', description: 'This involves providing expert advice and solutions for managing and analyzing vast amounts of data.Consultants help organizations implement big data technologies, optimize data storage, and extract valuable insights to drive business decisions.', link: '/big-data', imgSrc: '/aiml/1.svg' },
+        { title: 'Data Analytics', description: 'This is the process of examining data sets to draw conclusions about the information they contain. It involves techniques ranging from descriptive statistics to advanced data mining and predictive analytics, helping organizations make informed decisions and solve problems.', link: '/data-analytics', imgSrc: '/aiml/2.svg' },
+        { title: 'Machine Learning', description: 'This is a branch of artificial intelligence that enables systems to learn and improve from experience without explicit programming. By using algorithms and statistical models, it helps computers recognize patterns, make decisions, and predict outcomes based on data.', link: '/machine-learning', imgSrc: '/aiml/3.svg' },
+        { title: 'Data Security', description: 'Data Security focuses on protecting digital information from unauthorized access, corruption, or theft. It involves implementing measures such as encryption, access controls, and secure data storage to safeguard data privacy and integrity', link: '/machine-learning', imgSrc: '/aiml/4.svg' },
+        { title: 'Artificial Intelligence', description: 'Artificial Intelligence (AI) refers to the simulation of human intelligence in machines. AI systems are designed to perform tasks such as learning, reasoning, problem-solving, and natural language understanding, aiming to enhance efficiency and automate complex processes.', link: '/artificial-intelligence', imgSrc: '/aiml/5.svg' },
       ].map((service, index) => (
-        <div key={index} className="flex flex-row max-w-4/5 items-center">
-          <div className="w-1/2 md:w-1/3">
-            <img src={service.imgSrc} alt={service.title} className="w-full h-48 object-cover rounded-lg" />
+        <div key={index} className={`max-w-3/5 gap-24 flex flex-row items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+          <div className=" w-1/2  ">
+            <img src={service.imgSrc} alt={service.title} className="w-180 h-80 object-cover rounded-xl" />
           </div>
-          <div className="w-1/2 md:w-2/3 text-left md:text-left">
-            <h3 className="text-2xl font-semibold mt-4">{service.title}</h3>
-            <p className="mt-2 w-1/3">{service.description}</p>
+         
+          <div className="w-1/2  md:text-right">
+            <h3 className="text-3xl text-left font-bold mt-4 ">{service.title}</h3>
+            <p className="mt-2  text-xl text-gray-100 text-left">{service.description}</p>
             <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg">Learn More</button>
           </div>
-        </div>
+          </div>
+        
       ))}
     </div>
   </div>
 </section>
+
 
     </div>
   
