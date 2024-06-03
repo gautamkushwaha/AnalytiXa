@@ -4,6 +4,8 @@ import AboutUs from '../home/AboutUs';
 import Service from '../home/Service';
 import CoreValues from '../home/CoreValue';
 import ClientTestimonials from '../home/ClientTestimonials';
+import CasseStudies from '../home/CaseStudies';
+import ActionToTake from '../home/CallToAction';
 
 const HomePage = () => {
     return (
@@ -13,6 +15,8 @@ const HomePage = () => {
             <Service/>
             <CoreValues/>
             <ClientTestimonials/>
+            <CasseStudies/>
+            <ActionToTake/>
         </div>
     );
 };
