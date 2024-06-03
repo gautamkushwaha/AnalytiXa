@@ -7,7 +7,7 @@ const AboutUs = () => {
     <div className="flex flex-wrap items-center justify-between px-8 md:px-16 bg-[#1E1E1E]">
       {/* Left Column */}
       <div className="w-full md:w-1/2 p-4 md:p-8">
-        <img src="/AboutUs/Analytixa.svg" alt="About Us" className="w-full h-auto object-cover" />
+        <img src="/AboutUs/Artwork.svg" alt="About Us" className="w-full h-auto object-cover" />
       </div>
       {/* Right Column */}
       <div className="w-full md:w-1/2 p-4 md:p-8">
